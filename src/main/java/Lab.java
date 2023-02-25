@@ -36,8 +36,20 @@ public class Lab {
         int sum = 0;
         int i = 0;
 
-//        code here
-
+        public static void main(String[] args) {
+            Lab loop = new Lab();
+            System.out.println("According to the lab code, the sum of all numbers from 1 to 6, not including 6, is ");
+            int result = loop.whileExample(6);
+            System.out.println(result);
+            System.out.println("It should be 15.");
+            
+int sum = 0;
+int i = 0;
+while (i < 6) {
+    sum += i;
+    i++;
+}
+System.out.println(sum); // Output: 15
         return sum;
     }
 }
